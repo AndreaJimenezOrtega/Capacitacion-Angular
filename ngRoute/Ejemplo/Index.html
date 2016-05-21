@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="Controlador.js"></script>
+</head>
+<body ng-controller="CtrlInicio">
+    <div ng-controller="Ctrlpersonas as CtrlP">
+         <ul>
+             <li ng-repeat="per in CtrlP.Personas">
+                 nombre:{{per.nombre}} edad{{per.edad}}
+             </li>
+         </ul>
+    </div>
+    <div ng-view></div>
+    <p><a href="#/personas">Personas</a></p>
+    <p><a href="#/">Inicio</a></p>
+</body>
+</html>

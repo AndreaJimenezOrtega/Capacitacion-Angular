@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="controlador">
+        <ul>
+            <li ng-repeat="per in personas">nombre:{{per.nombre}} apellido:{{per.apellido}} Telefono:{{per.Telefono}} </li>
+        </ul>
+    </div>
+</body>
+</html>

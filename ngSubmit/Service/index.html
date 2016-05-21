@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="paisesController">
+    <div>
+        seleccione continente:
+        <select ng-model="url" ng-change="buscarPaises()">
+            <option value="http://restcountries.eu/rest/v1/region/africa">Africa</option>
+            <option value="http://restcountries.eu/rest/v1/region/europe">europa</option>
+            <option value="http://restcountries.eu/rest/v1/region/americas">America</option>
+        </select>
+        
+        <ul>
+            <li ng-repeat="pais in paises">
+                Pais:{{pais.name}} -- capital:{{pais.capital}}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

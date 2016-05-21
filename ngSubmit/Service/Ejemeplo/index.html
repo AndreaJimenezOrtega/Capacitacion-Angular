@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="controladorService">
+        <ul>
+            <li ng-repeat="pais in paises">
+                {{pais.name}}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="modulo">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <form ng-submit="MiFuncion()" ng-controller="controller">
+        Ingrese su nombre:<input type="text" ng-model="text" name="text">
+        <input type="submit" value="submit" id="submit">
+        <pre>Personas={{Personas}}</pre>
+    </form>
+</body>
+</html>
